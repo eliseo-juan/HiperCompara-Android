@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="ifRoom"
+        android:title="@string/actionBar_add"/>
+    <item
+        android:id="@+id/action_offers"
+        android:showAsAction="withText|ifRoom|collapseActionView"
+        android:title="@string/actionBar_offers"/>
+    <item
+        android:id="@+id/action_recipes"
+        android:showAsAction="never"
+        android:title="Recetas"/>
+    <item
+        android:id="@+id/action_delete_list"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:showAsAction="never"
+        android:title="@string/actionBar_delete_list"/>
+    <item
+        android:id="@+id/action_settings"
+        android:showAsAction="never"
+        android:title="@string/actionBar_settings"/>
+
+</menu>

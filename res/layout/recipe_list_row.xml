@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/paddingList"
+        android:paddingTop="@dimen/paddingList"
+            android:paddingBottom="@dimen/paddingList"
+                    android:paddingLeft="@dimen/paddingList" >
+
+        <TextView
+            android:id="@+id/textViewRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="32dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewRecipeDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewRecipeName"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewRecipeName"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

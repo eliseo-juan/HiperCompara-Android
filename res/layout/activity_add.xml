@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/paddingGeneral"
+    android:paddingLeft="@dimen/paddingGeneral"
+    android:paddingRight="@dimen/paddingGeneral"
+    android:paddingTop="@dimen/paddingGeneral"
+    tools:context=".AddActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" >
+
+            <FrameLayout
+                android:id="@+id/FrameCarne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddCarne"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/icono_carne" />
+
+                <TextView
+                    android:id="@+id/TextViewCarne"
+                     style="@style/add_text"
+                    android:text="Carne y Embutido"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FramePescado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddPesacado"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icono_pescado" />
+
+                <TextView
+                    android:id="@+id/TextViewPescado"
+                    style="@style/add_text"
+                    android:text="Pescado"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/FrameFruta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddFruta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/icono_fruta" />
+
+                <TextView
+                    android:id="@+id/textViewFruta"
+                     style="@style/add_text"
+                    android:text="Fruta y Verduras"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddLacteos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                       android:scaleType="fitCenter"
+                    android:src="@drawable/icono_lacteos" />
+
+                <TextView
+                    android:id="@+id/TextViewLacteos"
+                     style="@style/add_text"
+                    android:text="Lacteos"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+
+            
+			<FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddDrogueria"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                                        android:scaleType="fitCenter"
+                    android:src="@drawable/icono_drogueria" />
+
+                <TextView
+                    android:id="@+id/TextViewDrogueria"
+                    style="@style/add_text"
+                    android:text="Drogueria"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+            
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddPanaderia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                                        android:scaleType="fitCenter"
+                    android:src="@drawable/icono_panaderia" />
+
+                <TextView
+                    android:id="@+id/TextViewPanaderia"
+                    style="@style/add_text"
+                    android:text="Panaderia"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:visibility="visible" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddCongelados"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icono_congelados" />
+
+                <TextView
+                    android:id="@+id/TextViewCongelados"
+                    style="@style/add_text"
+                    android:text="Congelados"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddBebida"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                                        android:scaleType="fitCenter"
+                    android:src="@drawable/icono_bebida" />
+
+                <TextView
+                    android:id="@+id/TextViewBebidavddsd"
+                    style="@style/add_text"
+                    android:text="Bebidas"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </FrameLayout>
+                        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddVarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                                      android:scaleType="fitCenter"
+                    android:src="@drawable/icono_varios" />
+
+                <TextView
+                    android:id="@+id/TextViewVarios"
+                    style="@style/add_text"
+                    android:text="Varios"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:visibility="visible" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" >
+
+                <ImageButton
+                    android:paddingLeft="45dp"
+                    android:id="@+id/imageButtonUltimasCompras"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/icono_ultimas_compras" />
+
+                <TextView
+                    android:id="@+id/TextViewUltimasCompras"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/marginBotton"
+                    android:layout_marginRight="45dp"
+                    android:gravity="center|right"
+                    android:text="Productos\nhabituales"
+                    android:textSize="18sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

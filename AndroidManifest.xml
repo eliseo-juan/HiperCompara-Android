@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hipercompara"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="com.hipercompara.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.hipercompara.mapasapi2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Hipercompara" >
+        <activity
+            android:name="com.hipercompara.gui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hipercompara.gui.AddActivity"
+            android:label="@string/title_activity_add"
+            android:parentActivityName="com.hipercompara.gui.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.hipercompara.gui.MarketActivity"
+            android:label="@string/title_activity_market"
+            android:parentActivityName="com.hipercompara.gui.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.hipercompara.gui.OffersActivity"
+            android:label="@string/title_activity_offers"
+            android:parentActivityName="com.hipercompara.gui.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.hipercompara.gui.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.hipercompara.gui.NearbyMarket" >
+        </activity>
+        <activity
+            android:name="com.hipercompara.gui.NearbyMarket"
+            android:label="Distancia al super"
+            android:parentActivityName="com.hipercompara.gui.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.hipercompara.gui.RecipeActivity"
+            android:label="@string/title_activity_recipe"
+            android:parentActivityName="com.hipercompara.gui.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.hipercompara.gui.RecentActivity"
+            android:label="@string/title_activity_recent"
+            android:parentActivityName="com.hipercompara.gui.AddActivity" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDv41XvMxcLYTYRlHBpYXaF1ucjih-3d3I" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.hipercompara.gui.NextFilterActivity"
+            android:label="@string/title_activity_next_filter"
+            android:parentActivityName="com.hipercompara.gui.AddActivity" >
+        </activity>
+    </application>
+
+</manifest>

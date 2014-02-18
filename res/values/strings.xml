@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HiperCompara</string>
+    <string name="title_activity_add">Add</string>
+    <string name="actionBar_add">Add</string>
+    <string name="actionBar_delete_list">Borrar lista</string>
+    <string name="actionBar_search">Buscar</string>
+    <string name="actionBar_offers">Ofertas</string>
+    <string name="actionBar_settings">Ajustes</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_market">Supermercados</string>
+    <string name="action_settings">Settings</string>
+    <string name="view">Cambiar vista</string>
+    <string name="euro_symbol"> &#8364;</string>
+    <string name="title_activity_offers">Ofertas</string>
+    <string name="category_search_title">- Buscar por categoría -</string>
+
+    <string-array name="shoppingListAdaptor_options">
+        <item>Modificar producto</item>
+        <item>Eliminar producto</item>
+    </string-array>
+
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="title_activity_recipe">Recetas</string>
+    <string name="title_activity_recent">Productos habituales</string>
+    <string name="title_activity_next_filter">NextFilterActivity</string>
+    <string name="add">Añade tu \n primer \n producto</string>
+
+</resources>

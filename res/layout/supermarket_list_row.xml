@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:padding="2dp" >
+
+    <CheckBox
+        android:id="@+id/checkBoxSuperMarketList"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/imageViewSuperMarketList"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/list_focused_hipercompara" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/paddingGeneral"
+    android:paddingLeft="@dimen/paddingGeneral"
+    android:paddingRight="@dimen/paddingGeneral"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shopping_list_background_shape"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listViewMainShoppingList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/paddingGeneral"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMainResult"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="0"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imageMainLogoSupermmarket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icono_panaderia" />
+
+            <TextView
+                android:id="@+id/textViewMainPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:paddingLeft="@dimen/paddingGeneral"
+                android:paddingRight="@dimen/paddingGeneral"
+                android:text="17,24€"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="35dp" />
+
+            <ImageButton
+                android:id="@+id/buttonMainNextActivity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:src="@drawable/abs__ic_go"
+                android:text="Ir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMainLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Estamos calculando tu lista ;)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonMainEstimate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/addProductLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/flecha" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="bottom"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/add"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/holo_blue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
